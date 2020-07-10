@@ -11,3 +11,15 @@ then
 else
        echo "Invalid First name-It must contain first letter capital and minimum 3 letters "
 fi
+
+echo "Enter the Last Name:"
+read lName
+
+lNamePattern="^[A-Z]{1}[a-z]{2,}$"
+
+if [[ $lName =~ $lNamePattern ]]
+then
+        echo "Valid Last name"
+else
+        echo "Invalid Last name-It must contain first letter capital and minimum 3 letters."
+fi
