@@ -3,7 +3,7 @@
 echo "Enter the First Name:"
 read fName
 
-fNamePattern="^([A-Z]{1})[a-z]{2,}$"
+fNamePattern="^[A-Z]{1}[a-z]{2,}$"
 
 if [[ $fName =~ $fNamePattern ]]
 then
@@ -15,7 +15,7 @@ fi
 echo "Enter the Last Name:"
 read lName
 
-lNamePattern="^([A-Z]{1})[a-z]{2,}$"
+lNamePattern="^[A-Z]{1}[a-z]{2,}$"
 
 if [[ $lName =~ $lNamePattern ]]
 then
